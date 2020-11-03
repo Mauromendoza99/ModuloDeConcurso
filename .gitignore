@@ -1,0 +1,9 @@
+/target/
+bin/
+.settings/
+nbactions.xml
+.classpath
+.factorypath
+.project
+nb-configuration.xml
+nbactions-release-profile
