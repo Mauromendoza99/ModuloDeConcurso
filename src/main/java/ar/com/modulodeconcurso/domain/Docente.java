@@ -23,8 +23,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name="docente")
-public class Docente implements Serializable{
+@Table(name = "docente")
+public class Docente implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -36,9 +37,8 @@ public class Docente implements Serializable{
     private String email;
     private int telefono;
     private String domicilio;
-    
+
     @ManyToMany(mappedBy = "docente")
     private List<Concurso> concursos;
-    
-    
+
 }

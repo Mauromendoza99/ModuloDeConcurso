@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ar.com.modulodeconcursoe.service;
 
-/**
- *
- * @author Ryzen 3400G
- */
+import java.util.List;
+import ar.com.modulodeconcurso.domain.Docente;
+
 public interface DocenteService {
-    
+
+    List<Docente> findAllDocentes();
+
+    Docente findDocenteById(Long id);
+
+    //save
+    //Docente saveDocente(Docente docente);
+
+    //update
+    Docente updateDocente(Docente docente);
+
+    //delete
+    //Docente deleteDocente(Docente docente);
+
 }
